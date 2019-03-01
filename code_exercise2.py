@@ -26,5 +26,5 @@ df.columns = header
 # calculate the difference
 df['diff'] = abs(df['F'] - df['A'])
 print("The team with the smallest difference in ‘for’ and ‘against’ goals:")
-# return the row with minimum spread
+# return the row with minimum diff
 print(df[df['diff'] == df['diff'].min()])
