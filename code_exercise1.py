@@ -1,6 +1,7 @@
 import pandas as pd
 import re
 
+
 def get_min_spread(file_path):
     file = open(file_path, 'r')
     raw_data = file.readlines()[4:-2]
