@@ -11,7 +11,9 @@ header = [x for x in raw_data[0].split(' ') if len(x)>0]
 
 for line in raw_data[1:]:
 
+	# remove '-'
     line = line.replace("-",' ')
+    # split cells
     item = [x for x in line.split(' ') if len(x) >= 1]
     num = [int(x) for x in item[2:]]
 

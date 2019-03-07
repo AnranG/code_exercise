@@ -24,7 +24,7 @@ def get_min_spread(file_path):
     df = pd.DataFrame(data)
     df.columns = header
 
-    # calculate the difference
+    # calculate the temperature difference
     df['Spread'] = df['MxT'] - df['MnT']
     print("The day with the smallest temperature spread:")
     # return the row with minimum spread
